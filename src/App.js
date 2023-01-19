@@ -1,33 +1,52 @@
-import logo from './logo.svg';
+import logo from './img/logo.png';
 import './App.css';
 import { useState } from 'react';
 
 function App() {
 
   const [user, setUser] = useState('')
+  const [color, setColor] = useState(true)
+
   return (
     <section className='grid-template'>
 
-      <img src={logo} alt='logo'></img>
-      <h3 className='login'>LOGIN</h3>
-      <h3 className='register'>REGISTER</h3>
-      <section className='input-register'>
+      <div className='logo-login'>
+        <img src={logo} alt='logo' className='logo'></img>
+        <h3 className={color ? 'login-on' : 'register-off'}
+          onClick={(e) => {
+            e.preventDefault();
+            setColor(true)}}>
+          LOGIN
+        </h3>
+        <h3 className={color ? 'register-off' : 'register-on'}
+          onClick={(e) => {
+            e.preventDefault();
+            setColor(false)}}>
+          REGISTER
+        </h3>
+      </div>-
+
+      <div className={`input-register ${color ? 'background-login' : 'background-register'}`}>
         <form>
-          <input className='user'
+          <label>Username</label>
+          <input className='input'
             placeholder='Username'
             type='text'
             onChange={(e) => setUser(e.target.value)}>
           </input>
-          <input className='password'
+          <label>Password</label>
+          <input className='input'
             placeholder='Password'
             type='password'>
           </input>
-          <button className='button-login' type='submit' onClick={(e) => {
-            e.preventDefault();
-            console.log(user)
-          }}>ACCEPT</button>
+          <button className='button-accept'
+            type='submit'
+            onClick={(e) => {
+              e.preventDefault();
+              console.log(user)
+            }}>ACCEPT</button>
         </form>
-      </section>
+      </div>
 
     </section>
   );
