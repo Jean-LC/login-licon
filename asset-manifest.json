@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/login-licon/static/css/main.ff656aed.css",
+    "main.js": "/login-licon/static/js/main.86ce4fd6.js",
+    "static/media/GrupoLicoN.png": "/login-licon/static/media/GrupoLicoN.8a84f84db8c23deda3be.png",
+    "static/media/LICON-BLANCO-2.png": "/login-licon/static/media/LICON-BLANCO-2.c5fed92a1174914df4ed.png",
+    "static/media/Fondo_footer.jpg": "/login-licon/static/media/Fondo_footer.710cb5f7da111912858e.jpg",
+    "static/media/instagram.png": "/login-licon/static/media/instagram.90b122fc2916b8f55e61.png",
+    "static/media/logo-color.svg": "/login-licon/static/media/logo-color.61df8bfca225dbbd16dc783b8e39219b.svg",
+    "index.html": "/login-licon/index.html",
+    "main.ff656aed.css.map": "/login-licon/static/css/main.ff656aed.css.map",
+    "main.86ce4fd6.js.map": "/login-licon/static/js/main.86ce4fd6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ff656aed.css",
+    "static/js/main.86ce4fd6.js"
+  ]
+}
