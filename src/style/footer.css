@@ -1,0 +1,101 @@
+footer {
+    background-image: url('../img/Fondo_footer.jpg');
+    grid-column: span 3;
+    grid-row: span 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    color: white;
+}
+
+.logo-footer {
+    width: 100px;
+    margin: 0 20px 0 20px;
+}
+
+hr {
+    width: 70%;
+    color: white;
+    margin: 10px;
+}
+
+.iconos {
+    height: 20px;
+    margin: 0 10px 0 10px;
+}
+
+.boton-contacto {
+    width: 100px;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    color: #A51627;
+    margin: 20px;
+    font-weight: bolder;
+}
+
+.iconos-contacto {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 14px;
+    color: white;
+}
+
+.icono-texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 40px 0 40px;
+}
+
+.texto-contacto {
+    display: none;
+    margin: 5px;
+    position: absolute;
+    margin-top: 30px;
+    text-align: center;
+    width: 250px;
+}
+
+.iconos:hover+.texto-contacto {
+    cursor: pointer;
+    display: block;
+}
+
+.iconos-redes {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.terminos-condiciones {
+    display: flex;
+    font-size: 12px;
+    margin: 60px 10px 0 0;
+}
+
+.grupo-licon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 30px 0 30px;
+}
+
+.parrafos-avisos {
+    display: flex;
+    flex-direction: column;
+    margin: 0 30px 0 30px;
+}
+
+.derechos {
+    margin: 0 30px 0 30px
+}
+
+.logo-grupo-licon {
+    height: 40px;
+}
