@@ -5,13 +5,14 @@ import Header from "../components/header"
 import { useNavigate } from 'react-router-dom'
 import { useState } from 'react'
 
-const Login = () => {
+const Login = ({ setUser }) => {
     const [username, setUsername] = useState('')
     const navigate = useNavigate()
 
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log(username);
+        setUser(username);
         navigate('/welcome');
     }
 
